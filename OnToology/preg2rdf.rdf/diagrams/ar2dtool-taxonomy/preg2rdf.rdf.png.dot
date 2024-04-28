@@ -1,0 +1,32 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:FlightComfort" "base:Luggage" "base:Speed" "base:Service" "base:Crew" "base:Review" "base:Aircraft" "base:Quality" "base:Sentiment" "base:Aspect" "base:FlightReservation" "base:Position" "base:FoodService" "base:Cost" "base:NegativeKeyword" "base:CustomerSupport" "base:Attention" "base:FlightPunctuality" "base:Size" "base:Seat" "base:ExcelentFlightReservation" "base:PositiveKeyword" "base:ExcelentCustomerSupport" "base:FlightTicketManagement" "base:Flight" "base:ExcelentFoodService" "base:Author" "base:Class" "base:CheckIn" ; /*classes style*/
+	"base:Class" -> "base:Seat" [ label = "rdfs:subClassOf" ];
+	"base:CustomerSupport" -> "base:Service" [ label = "rdfs:subClassOf" ];
+	"base:Author" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:Seat" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:Position" -> "base:Seat" [ label = "rdfs:subClassOf" ];
+	"base:NegativeKeyword" -> "base:Sentiment" [ label = "rdfs:subClassOf" ];
+	"base:Cost" -> "base:Aspect" [ label = "rdfs:subClassOf" ];
+	"base:FlightReservation" -> "base:Service" [ label = "rdfs:subClassOf" ];
+	"base:Luggage" -> "base:Service" [ label = "rdfs:subClassOf" ];
+	"base:Aircraft" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:ExcelentFoodService" -> "base:FoodService" [ label = "rdfs:subClassOf" ];
+	"base:ExcelentCustomerSupport" -> "base:CustomerSupport" [ label = "rdfs:subClassOf" ];
+	"base:Sentiment" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:Size" -> "base:Seat" [ label = "rdfs:subClassOf" ];
+	"base:PositiveKeyword" -> "base:Sentiment" [ label = "rdfs:subClassOf" ];
+	"base:Speed" -> "base:Aspect" [ label = "rdfs:subClassOf" ];
+	"base:Aspect" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:ExcelentFlightReservation" -> "base:FlightReservation" [ label = "rdfs:subClassOf" ];
+	"base:FlightTicketManagement" -> "base:Service" [ label = "rdfs:subClassOf" ];
+	"base:Crew" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:Attention" -> "base:Aspect" [ label = "rdfs:subClassOf" ];
+	"base:FlightComfort" -> "base:Aspect" [ label = "rdfs:subClassOf" ];
+	"base:CheckIn" -> "base:Service" [ label = "rdfs:subClassOf" ];
+	"base:FlightPunctuality" -> "base:Aspect" [ label = "rdfs:subClassOf" ];
+	"base:Quality" -> "base:Aspect" [ label = "rdfs:subClassOf" ];
+	"base:FoodService" -> "base:Service" [ label = "rdfs:subClassOf" ];
+
+}
